@@ -5,6 +5,7 @@ A machine learning API for text classification that you can use to predict the c
 
 ## Project Structure
 
+```text
 text-classification-api/
 │
 ├── app/
@@ -13,7 +14,7 @@ text-classification-api/
 ├── README.md ---------------------For API documentations
 ├── requirements.txt --------------Contains packages to be installed
 └── train.py ----------------------Contains the code for the model. You need to run this file to train the model
-
+```
 
 ## Installation Guide
 
