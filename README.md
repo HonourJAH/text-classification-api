@@ -3,6 +3,18 @@
 A machine learning API for text classification that you can use to predict the category a texts belong to.
 
 
+## Project Structure
+
+text-classification-api/
+│
+├── app/
+    ├── main.py -------------------API route operation file
+├── predict.py --------------------Some predictions to test the working of the model/pipeline
+├── README.md ---------------------For API documentations
+├── requirements.txt --------------Contains packages to be installed
+└── train.py ----------------------Contains the code for the model. You need to run this file to train the model
+
+
 ## Installation Guide
 
 Clone the repo
@@ -26,13 +38,19 @@ Check if the virtual environment is active
 ```bash
 $ which python
 
-/home/user/code/awesome-project/.venv/bin/python
+/path/to/your/project/venv/bin/python
 ```
 
 Install all the packages in the requirements file
 ```bash
 $ pip install -r requirements.txt
 ```
+
+Train the model
+```bash
+$ python3 train.py
+```
+
 
 Start the server
 ```bash
@@ -45,7 +63,7 @@ I advise you use the fastapi swagger ui for a better experience in this case.
 Visit the [Swagger UI](http://127.0.0.1:8000/docs)
 
 
-## Example request respons
+## Example Request & Response
 
 Request:
 ```json
