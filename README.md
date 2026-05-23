@@ -58,6 +58,14 @@ Start the server
 $ fastapi dev
 ```
 
+
+## Running with Docker
+```bash
+docker build -t text-classification-api .
+docker run -p 8000:8000 text-classification-api
+```
+
+
 ## API Docs
 
 I advise you use the fastapi swagger ui for a better experience in this case.
@@ -79,3 +87,8 @@ Response:
   "predicted_category": "talk.religion.misc"
 }
 ```
+
+
+## CI/CD
+
+This project uses GitHub Actions to automatically build and health check the Docker image on every push.
