@@ -17,6 +17,11 @@ pipeline = data["pipeline"]
 categories = data["categories"]
 
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
 @app.post("/predict")
 def predict(input: TextInput):
     result = pipeline.predict([input.text])
